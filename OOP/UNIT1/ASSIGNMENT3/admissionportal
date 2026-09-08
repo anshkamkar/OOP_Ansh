@@ -1,0 +1,61 @@
+#include<iostream>
+using namespace std;
+
+class student{
+    public:
+    int ID, rn;
+    string name, em;
+
+    student(){
+    ID = 23984;
+    rn = 19;
+    name = "XXXXXX";
+    em = "ansh.kamkar@gmail.com";
+    }
+
+
+
+
+    student(int ID, int rn, string name, string em){
+        this->ID = ID;
+        this->rn = rn;
+        this->name = name;
+        this->em = em;
+    }
+
+    void input(){
+        cout<<"What is the Name of the Student: ";
+        cin>>name;
+        cout<<endl;
+        cout<<"What is the Email of the Student: ";
+        cin>>em;
+        cout<<endl;
+        cout<<"Enter the ID of the Student: ";
+        cin>>ID;
+        cout<<endl;
+        cout<<"Enter the Roll No of the Student: ";
+        cin>>rn;
+
+
+    }
+
+
+
+    void display(){
+        cout<<"Name: "<<name<<endl;
+        cout<<"Email: "<<em<<endl;
+        cout<<"Roll No: "<<rn<<endl;
+        cout<<"ID: "<<ID<<endl;
+    }
+};
+
+
+
+int main(){
+    student s1;
+    s1.input();
+    s1.display();
+    
+    return 0;
+
+}
